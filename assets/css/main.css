@@ -52,9 +52,8 @@
 
 }
 
-html, body { height: 100%; }
-
 body {
+    color: #ADADAD;
     background: #222 url('/assets/img/bg/bg_02.jpg') no-repeat fixed;
     margin-top: 10px;
 }
@@ -63,17 +62,16 @@ a,
 a:hover,
 a:active,
 a:visited {
-    color: #ADADAD;
+
 }
 
 #base-header {
-    width: 450px;
+    margin-bottom: 30px;
 }
 #header-title {
     font-family: 'OrbitronMedium', sans-serif;
     width: 400px;
     /* background: #EEE; */
-    padding: 20px;
 }
 #header-title h1 {
     margin: 0;
@@ -85,6 +83,47 @@ a:visited {
     background: rgba(19, 19, 19, 0.85);
     padding: 0px 20px;
     margin-left: 20px;
+    color: #ADADAD;
 }
+.access-buttons {
+    margin-top:20px;
+}
+
+.carousel-inner {
+    box-shadow: 0 0 10px 0 #141414;
+}
+.carousel-indicators {
+    top: -18px;
+}
+.carousel-control.left {
+    left: -55px;
+    top: 45%;
+}
+.carousel-control.right {
+    right: -55px;
+    top: 45%;
+}
+
+/*
+ * Footer */
+footer {
+    padding: 10px 0;
+}
+
+footer ul {
+    text-align: center;
+}
+footer li {
+    display: inline;
+    list-style: none;
+    margin: auto 2px auto 6px;
+}
+footer a,
+footer a:hover,
+footer a:active,
+footer a:visited {
+    color: #DDD;
+}
+
 
 

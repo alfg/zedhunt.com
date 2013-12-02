@@ -6,16 +6,44 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/main.css" rel="stylesheet">
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/assets/css/main.css">
-
+          ga('create', 'UA-46141509-1', 'zedhunt.com');
+          ga('send', 'pageview');
+        </script>
     </head>
     <body>
+        <div class="alert alert-error container">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>Warning!</strong> ZedHunt is currently in beta to iron out bugs. Feel free to sign up anyway!
+        </div>
 
-          {{ content }}
+        <header id="base-header" class="container">
+            <div class="pull-left">
+                <a href="/">
+                    <div id="header-title" class="row-fluid pull-left">
+                        <img class="pull-left" src="/assets/img/zedhunt_logo.png">
+                        <span class="pull-left">Squad Matchmaking for DayZ</span>
+                    </div>
+                </a>
+            </div>
+            <div class="access-buttons pull-right">
+                <a class="btn btn-success" href="http://portal.zedhunt.com/register">Register</a>
+                <a class="btn btn-danger" href="http://portal.zedhunt.com">Access Portal <sup>beta</sup></a>
+            </div>
+        </header>
 
+        {{ content }}
+        
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"></script>
+        <script type="text/javascript" src="/assets/js/custom.js"></script>
     </body>
 </html>
